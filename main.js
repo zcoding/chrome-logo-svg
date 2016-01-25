@@ -84,4 +84,4 @@ var logo = drawChrome(70, 140, 15, {x: 150, y: 150});
 logo.click(function() {
   logo.toggleClass('rotate');
 });
-logo.prependTo(document.body);
+logo.appendTo(document.getElementById('wrapper'));

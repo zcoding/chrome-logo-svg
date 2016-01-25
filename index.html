@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Draw chrome logo in svg</title>
+  <style>
+  html {
+    font-size: 16px;
+  }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+  }
+  @keyframes rotate{
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  .rotate {
+    animation: rotate 10000ms linear infinite;
+  }
+  #wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  a {
+    color: #4885ed;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper" id="wrapper">
+    <h1>This chrome logo is drew with <a href="http://snapsvg.io/" target="_blank">Snap.svg</a>.</h1>
+    <p>Click the logo to rotate it!</p>
+  </div>
+  <script src="snap.svg-min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
