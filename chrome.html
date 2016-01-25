@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Draw chrome logo in svg</title>
+  <style>
+  body {
+    margin: 0;
+  }
+  @keyframes rotate{
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  .rotate {
+    animation: rotate 10000ms linear infinite;
+  }
+  </style>
+</head>
+<body>
+  <script src="snap.svg-min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
